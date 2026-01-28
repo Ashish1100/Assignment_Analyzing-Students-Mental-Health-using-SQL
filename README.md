@@ -39,6 +39,8 @@ Understanding mental health patterns in international students is critical for:
 3. How does acculturative stress (ASISS) evolve as international students spend more time at the institution?
 4. Are there critical time periods (early vs. extended stay) where mental health metrics show significant differences?
 
+---
+
 ## Dataset Description
 
 ### Source
@@ -77,6 +79,8 @@ Understanding mental health patterns in international students is critical for:
 - Measures stress from cultural adjustment and integration
 - Range: 24-120 (higher scores indicate elevated acculturative stress)
 - Positive relationship with depression expected
+
+---
 
 ## Methodology
 
@@ -123,6 +127,8 @@ This project employs descriptive statistical analysis to quantify mental health 
 **Aggregation (COUNT, AVG):** Transforms individual responses into population-level statistics, reducing noise and enabling trend identification.
 
 **Ordering (ORDER BY DESC):** Facilitates visual inspection of trends as tenure increases, making it easier to spot inflection points or deterioration patterns.
+
+---
 
 ## SQL Implementation
 
@@ -248,6 +254,8 @@ SQL executes in this order:
 5. **ORDER BY** - Sort the grouped results
 6. **LIMIT** - Return specified number of rows
 
+---
+
 ## Key Insights and Observations
 
 ### Expected Findings
@@ -260,6 +268,7 @@ Based on the research context and analysis structure, we anticipate:
 
 **Acculturative Stress Arc:** Acculturative stress is typically highest during early adaptation phases and should decline with extended stay as cultural familiarity increases.
 
+---
 
 ## Repository Structure
 
@@ -276,6 +285,7 @@ mental-health-analysis/
 ├── README.md
 └── requirements.txt
 ```
+---
 
 ## Running the Analysis
 
@@ -303,7 +313,7 @@ mental-health-analysis/
    pip install -r requirements.txt
    jupyter notebook notebooks/analysis.ipynb
    ```
-
+---
 
 ## References
 
