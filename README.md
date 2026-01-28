@@ -272,9 +272,7 @@ mental-health-analysis/
 ├── notebooks/
 │   └── analysis.ipynb
 ├── images/
-│   └── mentalhealth.jpg
-├── reports/
-│   └── findings.pdf
+│   └── MH.jpg
 ├── README.md
 └── requirements.txt
 ```
