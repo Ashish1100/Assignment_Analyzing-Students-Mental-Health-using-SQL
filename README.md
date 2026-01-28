@@ -29,6 +29,9 @@ Understanding mental health patterns in international students is critical for:
 - Informing policy interventions for student wellbeing
 - Contributing evidence to the growing body of research on international student mental health
 
+![MH](https://github.com/Ashish1100/Assignment_Analyzing-Students-Mental-Health-using-SQL/blob/main/images/MH.png)
+
+
 ## Research Questions
 
 1. How do depression (PHQ-9) scores of international students vary by length of stay?
