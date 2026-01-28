@@ -1,4 +1,13 @@
-# Student Mental Health Analysis
+<div align="center"> 
+
+# **Student Mental Health Analysis using SQL**
+
+![SQL](https://img.shields.io/badge/SQL-PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=flat&logo=jupyter&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+
+</div>
 
 A comprehensive data analysis project investigating the mental health indicators of international students at a Japanese university, with emphasis on how depression, social connectedness, and acculturative stress vary by length of stay.
 
@@ -290,6 +299,7 @@ mental-health-analysis/
 
 3. **Explore with Jupyter:**
    ```bash
+   pip install -r requirements.txt
    jupyter notebook notebooks/analysis.ipynb
    ```
 
@@ -306,3 +316,61 @@ mental-health-analysis/
 - ASISS: Sandhu (1994)
 
 ---
+
+
+## **License**
+
+```
+© 2026 Ashish Saha
+
+This assignment is a personal initiative intended for educational use only.
+
+Permission is granted to use, copy, and modify this software for learning and research purposes.
+Commercial use, sale, or monetization of this software or its derivatives is strictly prohibited.
+
+The software is provided “as is”, without warranty of any kind.
+
+```
+
+---
+
+
+## **Author**
+
+<div align="center">
+
+### **Ashish Saha**
+**AI Engineering** | **ML Research** | **Data Science**
+
+*Specializing in building intelligent ML systems and transforming data into actionable insights.*
+
+**Tech Stack:** Python • TensorFlow/Keras • PyTorch • XGBoost • Scikit-learn 
+
+<a href="https://github.com/Ashish1100" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://www.linkedin.com/in/ashishsaha21/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="mailto:ashishsaha.software@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email">
+</a>
+
+</div>
+
+
+
+---
+
+</div>
+
+<div align="center">
+
+### **Star ⭐ this repo if you found this assignment helpful!**
+
+
+---
+
+*Made with ❤️ by Ashish Saha*
+
+</div>
