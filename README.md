@@ -236,13 +236,6 @@ mental-health-analysis/
    jupyter notebook notebooks/analysis.ipynb
    ```
 
-## Contributing
-
-Contributions are welcome. Please:
-1. Fork the repository
-2. Create a feature branch
-3. Document modifications
-4. Submit a pull request
 
 ## References
 
