@@ -271,7 +271,7 @@ Based on the research context and analysis structure, we anticipate:
 ## Repository Structure
 
 ```
-mental-health-analysis/
+Analyzing-Students-Mental-Health-using-SQL/
 ├── data/
 │   └── students.csv
 ├── sql/
