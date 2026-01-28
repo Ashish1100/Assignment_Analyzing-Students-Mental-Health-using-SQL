@@ -258,8 +258,6 @@ SQL executes in this order:
 
 ## Key Insights and Observations
 
-### Expected Findings
-
 Based on the research context and analysis structure, we anticipate:
 
 **Depression Patterns:** International students with shorter tenure may show elevated PHQ-9 scores due to adjustment challenges; longer-stay students may show improvement if adaptation is successful.
