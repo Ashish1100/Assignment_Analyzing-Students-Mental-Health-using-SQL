@@ -1,6 +1,6 @@
 <div align="center"> 
 
-# **Student Mental Health Analysis using SQL**
+# **Analyzing Students Mental Health using SQL**
 
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)
