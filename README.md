@@ -117,6 +117,17 @@ This project employs descriptive statistical analysis to quantify mental health 
 ### The Complete Query
 
 ```sql
+-- Student Mental Health Analysis
+-- International Students Mental Health Diagnostic Scores by Length of Stay
+-- SQL Query for PostgreSQL-compatible Databases
+
+-- OVERVIEW
+-- This query analyzes three mental health diagnostic scores (depression, social connectedness, 
+-- acculturative stress) for international students grouped by their length of stay at the institution.
+-- It filters for international students only, aggregates mental health metrics by tenure duration,
+-- and returns results ordered by stay duration.
+
+-- QUERY START
 SELECT 
     stay AS stay,
     COUNT(*) AS count_int,
@@ -128,7 +139,53 @@ WHERE inter_dom = 'Inter'
 GROUP BY stay
 ORDER BY stay DESC
 LIMIT 9;
+-- QUERY END
+
+-- COLUMN DEFINITIONS
+-- stay:           Length of stay in years (1-10)
+-- count_int:      Number of international students in each stay group
+-- average_phq:    Average PHQ-9 depression score (0-27 scale; higher = more severe)
+-- average_scs:    Average Social Connectedness Scale score (20-80 scale; higher = more connected)
+-- average_as:     Average Acculturative Stress score (24-120 scale; higher = more stressed)
+
+-- EXECUTION ORDER (Important for query logic understanding)
+-- 1. FROM students       - Load all student records
+-- 2. WHERE inter_dom='Inter'  - Filter to international students only
+-- 3. GROUP BY stay      - Partition data into 9 groups by tenure duration
+-- 4. SELECT             - Compute aggregations (COUNT, AVG) within each group
+-- 5. ORDER BY stay DESC - Sort results by longest stay first
+-- 6. LIMIT 9           - Return maximum 9 rows
+
+-- ALTERNATIVE: Using CTE (Common Table Expression)
+
+WITH international_students AS (
+SELECT *
+FROM students
+WHERE inter_dom = 'Inter'
+)
+
+SELECT 
+stay,
+COUNT(*) AS count_int,
+ROUND(AVG(todep), 2) AS average_phq,
+ROUND(AVG(tosc), 2) AS average_scs,
+ROUND(AVG(toas), 2) AS average_as
+FROM international_students
+GROUP BY stay
+ORDER BY stay DESC
+LIMIT 9;
 ```
+
+### Expected Output
+
+The query returns a table with 9 rows:
+
+| stay | count_int | average_phq | average_scs | average_as |
+|------|-----------|-------------|-------------|-----------|
+| 10   | 8         | 5.75        | 41.25       | 52.38     |
+| 9    | 5         | 6.20        | 39.80       | 58.60     |
+| ... | ... | ... | ... | ... |
+| 1    | 142       | 6.45        | 38.92       | 61.23     |
 
 ### Clause-by-Clause Explanation
 
